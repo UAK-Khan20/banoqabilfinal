@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* background: linear-gradient(-45deg,rgb(23, 23, 39),  */
+    /* rgb(71, 26, 26)); */
+    background: url(./img2.webp);
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text{
+    text-align: center;
+    padding: 20px;
+    font-size: 5vw;
+    font-family: cursive;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(./img4.webp);
+}
+
+
+.searchBar{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    height: 20%;
+}
+#searchinput{
+    color:  rgb(231, 243, 243);;
+    width:80%;
+    height: 40px;
+    border: 2px solid rgb(243, 134, 32);
+    border-radius: 13px;
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+#searchinput::placeholder{
+    color: rgb(214, 235, 235);
+}
+#searchbtn{
+    height: 42px;
+    width: 10%;
+    border-radius: 13px;
+    border: 2px solid rgb(243,134, 32);
+    cursor: pointer;
+    background-color: rgb(16, 16, 75);
+    color: rgb(80, 224, 224);
+}
+#searchbtn:hover{
+    background-color: rgb(19, 19, 158);
+}
+.showdata{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+}
+.card{
+    margin-inline: 18px;
+    margin-top: 30px;
+    padding: 7px;
+}
+.card a{
+    color: aquamarine;
+}
+.card a:hover{
+    border-bottom: 1px solid black;
+    color: rgb(133, 228, 228);
+}
+.showdata img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.loadmore{
+    text-align: center;
+    padding: 22px;
+    display: none;
+}
+#Morebtn{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(56, 56, 107);
+    color: rgb(70, 243, 243);
+    font-size: 20px;
+    border: 2px solid rgb(245, 123, 24);
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media screen and (max-width:550px) {
+    #searchbtn{
+        font-size: 12px;
+    }
+}
